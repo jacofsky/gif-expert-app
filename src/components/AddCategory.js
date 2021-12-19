@@ -7,13 +7,15 @@ const AddCategory = ({setCategories}) => {
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value)
-    }
 
+    }
+    
     const handlSumbit = (e) => {
         
         e.preventDefault()
+        console.log('--- aaEJECUTADOaa ----')
 
-        if(inputValue.trim() != ''){
+        if(inputValue.trim() !== ''){
             setCategories(cats => [inputValue, ...cats])
             setInputValue('')
         }
@@ -21,7 +23,7 @@ const AddCategory = ({setCategories}) => {
 
     return (
         <form onSubmit={handlSumbit}>
-            
+            <p>{inputValue}</p>
             <input 
                 id='inputAgregarPalabra' 
                 type="text" 

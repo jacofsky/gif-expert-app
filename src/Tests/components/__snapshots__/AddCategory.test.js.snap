@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in AddCategory.test.js should match the snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <p />
+  <input
+    id="inputAgregarPalabra"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</form>
+`;
